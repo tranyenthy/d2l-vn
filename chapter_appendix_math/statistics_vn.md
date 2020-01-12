@@ -683,7 +683,7 @@ Chú ý rằng :eqref:`eq_confidence` được dùng để tính biến $C_n$, c
 ### Interpretation
 -->
 
-### *dịch tiêu đề phía trên*
+### Diễn giải
 
 <!--
 It is very tempting to interpret a $95\%$ confidence interval as an interval where you can be $95\%$ sure the true parameter lies, however this is sadly not true. 
@@ -691,7 +691,8 @@ It is very tempting to interpret a $95\%$ confidence interval as an interval whe
  Thus a better interpretation would be to say that if you generated a large number of confidence intervals by this procedure, $95\%$ of the generated intervals would contain the true parameter.
 -->
 
-*dịch đoạn phía trên*
+Việc cho rằng một khoảng tin cậy $95\%$ là khoảng mà $95\%$ các giá trị thực phân bố thật hấp dẫn, tuy nhiên điều này đáng buồn lại không chính xác.
+Giá trị thực là cố định trong khoảng tin cậy mới là ngẫu nhiên. Vậy nên một cách diễn giải tốt hơn đó là nếu bạn tạo ra một số lượng lớn các khoảng tin cậy theo quy trình này, $95\%$ các khoảng được tạo sẽ chứa giá trị thực.
 
 <!--
 This may seem pedantic, but it can have real implications for the interpretation of the results.  
@@ -700,7 +701,10 @@ We close this section by providing three tempting but false statements.
 An in-depth discussion of these points can be found in :cite:`Morey.Hoekstra.Rouder.ea.2016`.
 -->
 
-*dịch đoạn phía trên*
+Điều này nghe có vẻ tiểu tiết, nhưng lại có một ý nghĩa quan trọng trong việc diễn giải các kết quả.
+Cụ thể, chúng ta có thể thỏa mãn :eqref:`eq_confidence` bằng cách tạo ra các khoảng *gần như chắc chắn* là chúng không tồn tại giá trị thực, miễn là số lượng các khoảng này không nhiều.
+Chúng ta kết luận mục này bằng cách đưa ra ba giả thuyết nghe hợp lý nhưng lại không chính xác.
+Một sự thảo luận sâu hơn về những điểm dưới đây có thể tìm thấy ở  :cite:`Morey.Hoekstra.Rouder.ea.2016`.  
 
 <!--
 * **Fallacy 1**. Narrow confidence intervals mean we can estimate the parameter precisely.
@@ -708,14 +712,17 @@ An in-depth discussion of these points can be found in :cite:`Morey.Hoekstra.Rou
 * **Fallacy 3**. The probability) that a particular observed $95\%$ confidence interval contains the true value is $95\%$.
 -->
 
-*dịch đoạn phía trên*
+* **Ngụy biện 1**. Khoảng tin cậy hẹp cho phép chúng ta dự đoán các giá trị một cách chính xác.
+* **Ngụy biện 2**. Các giá trị nằm trong khoảng tin cậy có nhiều khả năng là giá trị thực hơn là các giá trị nằm bên ngoài.  
+* **Ngụy biện 3**. Xác xuất mà một khoảng được quan sát với độ tin cậy $95\%$ chứa các giá trị thực là $95\%$.
 
 <!--
 Sufficed to say, confidence intervals are subtle objects.  H
 owever, if you keep the interpretation clear, they can be powerful tools.
 -->
 
-*dịch đoạn phía trên*
+Có thể nói, các khoảng tin cậy là những đối tượng khó đoán.
+Tuy nhiên nếu như bạn diễn giải chúng một cách rõ ràng, thì chúng có thể trở thành những công cụ mạnh mẽ.  
 
 <!-- =================== Kết thúc dịch Phần 11 ================================-->
 
