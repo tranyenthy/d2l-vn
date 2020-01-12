@@ -653,13 +653,13 @@ To be useful, a confidence interval should be as small as possible for a given d
 ### Definition
 -->
 
-### *dịch tiêu đề phía trên*
+### Định nghĩa
 
 <!--
 Mathematically, a *confidence interval* for the true parameter $\theta$ is an interval $C_n$ that computed from the sample data such that
 -->
 
-*dịch đoạn phía trên*
+Về mặt toán học, một *khoảng tin cậy* của giá trị thực $\theta$ là khoảng $C_n$ được tính từ dữ liệu mẫu sao cho:
 
 $$P_{\theta} (C_n \ni \theta) \geq 1 - \alpha, \forall \theta.$$
 :eqlabel:`eq_confidence`
@@ -669,14 +669,15 @@ Here $\alpha \in (0, 1)$, and $1 - \alpha$ is called the *confidence level* or *
 This is the same $\alpha$ as the significance level as we discussed about above.
 -->
 
-*dịch đoạn phía trên*
+Ở đây $\alpha \in (0, 1)$, và $1 - \alpha$ được gọi là *mức độ tin cậy* hoặc *độ phủ* của khoảng tin cậy.
+Nó cũng chính là hệ số $\alpha$ của mức ý nghĩa thống kê mà chúng ta đã bàn luận ở trên. 
 
 <!--
 Note that :eqref:`eq_confidence` is about variable $C_n$, not about the fixed $\theta$. 
 To emphasize this, we write $P_{\theta} (C_n \ni \theta)$ rather than $P_{\theta} (\theta \in C_n)$.
 -->
 
-*dịch đoạn phía trên*
+Chú ý rằng :eqref:`eq_confidence` được dùng để tính biến $C_n$, chứ không phải giá trị cố định θ. Để nhấn mạnh điều này, chúng ta viết $P_{\theta} (C_n \ni \theta)$ thay cho $P_{\theta} (\theta \in C_n)$
 
 <!--
 ### Interpretation
