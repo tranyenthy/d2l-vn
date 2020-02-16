@@ -457,7 +457,7 @@ To express the sum of the elements in a vector $\mathbf{x}$ of length $d$, we wr
 Một phép toán hữu ích mà ta có thể thực hiện trên bất kỳ tensor nào là phép tính tổng các phần tử của nó.
 Ký hiệu toán học của phép tính tổng là $\sum$.
 Ta biểu diễn phép tính tổng các phần tử của một vector $\mathbf{x}$ với độ dài $d$ dưới dạng $\sum_{i=1}^d x_i$.
-Trong mã nguồn, ta chỉ cần gọi hàm `sum`.
+Trong mã lập trình, ta chỉ cần gọi hàm `sum`.
 
 ```{.python .input  n=11}
 x = np.arange(4)
@@ -470,7 +470,7 @@ For example, the sum of the elements of an $m \times n$ matrix $\mathbf{A}$ coul
 -->
 
 Ta có thể biểu diễn phép tính tổng các phần tử của tensor có kích thước tùy ý.
-Ví dụ, tổng các phẩn tử của một ma trận $m \times n$ có thể được viết là $\sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij}$.
+Ví dụ, tổng các phẩn tử của một ma trận $m \times n$ $\mathbf{A}$ có thể được viết là $\sum_{i=1}^{m} \sum_{j=1}^{n} a_{ij}$.
 
 ```{.python .input  n=12}
 A.shape, A.sum()
@@ -487,6 +487,7 @@ Since the input matrix reduces along axis $0$ to generate the output vector, the
 Theo mặc định, hàm `sum` sẽ *rút gọn* tensor dọc theo tất cả các trục của nó và trả về kết quả là một số vô hướng.
 Ta cũng có thể chỉ định các trục được rút gọn bằng phép tổng.
 Lấy ma trận làm ví dụ, để rút gọn theo chiều hàng (trục $0$) bằng việc tính tổng tất cả các hàng, ta đặt `axis=0` khi gọi hàm `sum`.
+Do ma trận đầu vào rút gọn theo trục $0$ để tạo vector đầu ra, chiều trục $0$ tại đầu vào sẽ không còn trong kích thước đầu ra.
 
 ```{.python .input}
 A_sum_axis0 = A.sum(axis=0)
@@ -499,7 +500,7 @@ Thus, the dimension of axis $1$ of the input is lost in the output shape.
 -->
 
 Việc đặt `axis=1` sẽ rút gọn theo cột (trục $1$) bằng việc tính tổng tất cả các cột.
-Do đó, kích thước trục $1$ của đầu vào sẽ không còn trong kích thước của đầu ra.
+Do đó, chiều trục $1$ của đầu vào sẽ không còn trong kích thước đầu ra.
 
 ```{.python .input}
 A_sum_axis1 = A.sum(axis=1)
@@ -525,7 +526,7 @@ In code, we could just call `mean` on tensors of arbitrary shape.
 
 Một đại lượng liên quan là *trung bình cộng*.
 Ta tính trung bình cộng bằng cách chia tổng các phần tử cho số lượng phần tử.
-Trong mã nguồn, ta chỉ cần gọi hàm `mean` với đầu vào là các tensor có kích thước tùy ý.
+Trong mã lập trình, ta chỉ cần gọi hàm `mean` với đầu vào là các tensor có kích thước tùy ý.
 
 ```{.python .input  n=13}
 A.mean(), A.sum() / A.size
